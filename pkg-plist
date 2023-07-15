@@ -1,0 +1,10 @@
+pkg/birdvector.xml
+pkg/birdvector.inc
+bin/pathvector
+/etc/inc/priv/birdvector.priv.inc
+www/packages/birdvector/birdvector.php
+www/packages/birdvector/birdvector_config.php
+www/packages/birdvector/birdvector_shell.php
+www/packages/birdvector/birdvector_shell_ajax.php
+%%DATADIR%%/info.xml
+@dir /etc/inc/priv

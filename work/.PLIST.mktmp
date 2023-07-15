@@ -1,0 +1,16 @@
+/usr/local/share/licenses/pfSense-pkg-BirdVector-6.3.2_1/catalog.mk
+/usr/local/share/licenses/pfSense-pkg-BirdVector-6.3.2_1/LICENSE
+/usr/local/share/licenses/pfSense-pkg-BirdVector-6.3.2_1/APACHE20
+pkg/birdvector.xml
+pkg/birdvector.inc
+bin/pathvector
+/etc/inc/priv/birdvector.priv.inc
+www/packages/birdvector/birdvector.php
+www/packages/birdvector/birdvector_config.php
+www/packages/birdvector/birdvector_shell.php
+www/packages/birdvector/birdvector_shell_ajax.php
+share/pfSense-pkg-BirdVector/info.xml
+@dir /etc/inc/priv
+@owner
+@group
+@mode
