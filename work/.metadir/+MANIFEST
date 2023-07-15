@@ -1,5 +1,5 @@
 name: "pfSense-pkg-BirdVector"
-version: "6.3.2_1"
+version: "1.0_1"
 origin: net/pfSense-pkg-BirdVector
 comment: <<EOD
 pfSense package BirdVector

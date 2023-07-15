@@ -4,7 +4,7 @@
 		<name>BirdVector</name>
 		<website>https://pathvector.io/</website>
 		<descr><![CDATA[Intergration between Bird2, Pathvector and BGPQ4.]]></descr>
-		<version>6.3.2_1</version>
+		<version>1.0_1</version>
 		<configurationfile>birdvector.xml</configurationfile>
 	</package>
 </pfsensepkgs>

@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	pfSense-pkg-BirdVector
-PORTVERSION=	6.3.2
+PORTVERSION=	1.0
 PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	# empty

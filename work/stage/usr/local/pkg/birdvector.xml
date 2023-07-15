@@ -27,7 +27,7 @@
 	]]>
 	</copyright>
 	<name>birdvector</name>
-	<version>6.3.2_1</version>
+	<version>1.0_1</version>
 	<title>Bird Vector</title>
 	<include_file>/usr/local/pkg/birdvector.inc</include_file>
 	<menu>

@@ -1,6 +1,6 @@
-/usr/local/share/licenses/pfSense-pkg-BirdVector-6.3.2_1/catalog.mk
-/usr/local/share/licenses/pfSense-pkg-BirdVector-6.3.2_1/LICENSE
-/usr/local/share/licenses/pfSense-pkg-BirdVector-6.3.2_1/APACHE20
+/usr/local/share/licenses/pfSense-pkg-BirdVector-1.0_1/catalog.mk
+/usr/local/share/licenses/pfSense-pkg-BirdVector-1.0_1/LICENSE
+/usr/local/share/licenses/pfSense-pkg-BirdVector-1.0_1/APACHE20
 pkg/birdvector.xml
 pkg/birdvector.inc
 bin/pathvector
