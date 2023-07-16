@@ -4,8 +4,6 @@ An implimentation of Bird2, Pathvector and BGPQ4 on the pfSense Environment.
 ## What is it?
 This pfSense package allows you to fully control pathvector and bird2 via the WebUI on your pfSense installations.
 
-[![Example PathVector] (https://i3.ytimg.com/vi/SaNtz-RUniw/maxresdefault.jpg)] (https://youtu.be/SaNtz-RUniw "Example PathVector")
-
 ## Installtion
 You will need to install the dependacies. If you're running pfSense 2.6 (FreeBSD-12) make sure to replace the below URLs with `reeBSD:12:amd64`
 
