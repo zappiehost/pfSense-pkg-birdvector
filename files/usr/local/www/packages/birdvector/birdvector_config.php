@@ -12,6 +12,7 @@ $tab_array = array();
 $tab_array[] = array(gettext("Status"), false, "/packages/birdvector/birdvector.php");
 $tab_array[] = array(gettext("Configuration"), true, "/packages/birdvector/birdvector_config.php");
 $tab_array[] = array(gettext("Interactive Shell"), false, "/packages/birdvector/birdvector_shell.php");
+$tab_array[] = array(gettext("About"), false, "/packages/birdvector/birdvector_about.php");
 display_top_tabs($tab_array);
 
 if($_POST['save']) {
@@ -30,7 +31,7 @@ if($_POST['save']) {
 		}
 	}
 } else {
-	print_info_box('It is recommended to run Pathvector every 12 hours to update IRR prefix lists and PeeringDB prefix limits.<br />Adding the followingto your crontab will update the filters at 12 AM and PM every day.<br /<br /><pre>0 */12 * * * /usr/local/bin/pathvector -c /usr/local/etc/pathvector.yaml generate</pre>', 'info', false);
+	print_info_box('It is recommended to run Pathvector every 12 hours to update IRR prefix lists and PeeringDB prefix limits.<br />Adding the following to your crontab will update the filters at 12 AM and PM every day.<br /<br /><pre>0 */12 * * * /usr/local/bin/pathvector -c /usr/local/etc/pathvector.yaml generate</pre>', 'info', false);
 }
 
 $pathvectorConfigText = get_pathvector_confg();
@@ -44,7 +45,7 @@ $section->addInput(new Form_Textarea(
 	$pathvectorConfigText
 ))->setNoWrap()
 	->setRows($textrowcount)
-	->setHelp('For Pathvector yaml configuration documentations and examples visit: <a href="https://pathvector.io" target="_blank">https://pathvector.io</a>');
+	->setHelp('Note: bird-directory, bird-binary and bird-socket are automatically generated, please do not include them within your configuration.<br />For Pathvector yaml configuration documentations and examples visit: <a href="https://pathvector.io" target="_blank">https://pathvector.io</a>');
 
 $form->add($section);
 print($form);
