@@ -58,7 +58,7 @@ prefixes:
   - 2001:db8::/48
 EOL;
 
-	if (file_put_contents($pathvector_config, $pathvector_config_content) === FALSE) {
+	if (!file_exists($pathvector_config) && file_put_contents($pathvector_config, $pathvector_config_content) === FALSE) {
 		log_error("ERROR: Could not write {$pathvector_config}");
 		exit;
 	}
@@ -69,15 +69,11 @@ EOL;
 function birdvector_deinstall() {
 	global $config;
 
-	bird_kill();
-
 	if (isset($config['installedpackages']['birdvector']['config'])) {
 		unset($config['installedpackages']['birdvector']['config']);
 	}
 
 	write_config("[birdvector] Package uninstalled.");
-
-	unlink_if_exists('/usr/local/etc/pathvector.yaml');
 }
 
 function birdvector_sync() {
