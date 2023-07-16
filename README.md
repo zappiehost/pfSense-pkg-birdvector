@@ -24,3 +24,9 @@ pkg add https://github.com/zappiehost/pfSense-pkg-birdvector/releases/latest/dow
 # For pfSense 2.6
 pkg add https://github.com/zappiehost/pfSense-pkg-birdvector/releases/latest/download/pfSense-pkg-BirdVector-2.6.pkg
 ```
+
+## Uninstall
+To remove and uninstall the package:
+```
+pkg delete pfSense-pkg-BirdVector
+```

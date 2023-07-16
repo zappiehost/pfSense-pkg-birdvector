@@ -27,6 +27,7 @@ $priv_list['page-services-birdvectorpackage']['descr'] = "Allow access to BirdVe
 $priv_list['page-services-birdvectorpackage']['match'] = array();
 $priv_list['page-services-birdvectorpackage']['match'][] = "packages/birdvector/birdvector_status.php*";
 $priv_list['page-services-birdvectorpackage']['match'][] = "packages/birdvector/birdvector_config.php*";
+$priv_list['page-services-birdvectorpackage']['match'][] = "packages/birdvector/birdvector_about.php*";
 $priv_list['page-services-birdvectorpackage']['match'][] = "packages/birdvector/birdvector_shell.php*";
 $priv_list['page-services-birdvectorpackage']['match'][] = "packages/birdvector/birdvector_shell_ajax.php*";
 $priv_list['page-services-birdvectorpackage']['match'][] = "packages/birdvector/index.php*";
