@@ -71,7 +71,10 @@ function birdvector_deinstall() {
 
 	bird_kill();
 
-	unset($config['installedpackages']['birdvector']['config'][0]);
+	if (isset($config['installedpackages']['birdvector']['config'])) {
+		unset($config['installedpackages']['birdvector']['config']);
+	}
+
 	write_config("[birdvector] Package uninstalled.");
 
 	unlink_if_exists('/usr/local/etc/pathvector.yaml');
@@ -141,7 +144,7 @@ function get_bird_status() {
 }
 
 function pathvector_version() {
-	$output = shell_exec("/usr/local/bin/pathvector version | grep -w 'Built\|Pathvector' 2>&1");
+	$output = shell_exec("/usr/local/bin/pathvector version | grep -w 'Pathvector' | awk '{print $2}'");
 	if (!$output) {
 		return "Cannot Connect to Pathvector!";
 	}
@@ -149,7 +152,7 @@ function pathvector_version() {
 }
 
 function bgpq4_version() {
-	$output = shell_exec("/usr/local/bin/bgpq4 -v | grep -w 'version' 2>&1");
+	$output = shell_exec("/usr/local/bin/bgpq4 -v | grep -w 'version' | awk '{print $2}' 2>&1");
 	if (!$output) {
 		return "Cannot Connect to BGPQ4!";
 	}
@@ -157,11 +160,11 @@ function bgpq4_version() {
 }
 
 function bird_version() {
-	$output = shell_exec("/usr/local/sbin/birdc --version 2>&1");
+	$output = shell_exec("/usr/local/sbin/bird --version 2>&1");
 	if (!$output) {
 		return "Cannot Connect to BIRD!";
 	}
-	return $output;
+	return explode(' ', $output)[2];;
 }
 
 ?>

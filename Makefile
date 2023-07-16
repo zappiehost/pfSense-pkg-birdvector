@@ -62,6 +62,7 @@ do-install:
 		${STAGEDIR}${DATADIR}
 	@${REINPLACE_CMD} -i '' -e "s|%%PKGVERSION%%|${PKGVERSION}|" \
 		${STAGEDIR}${PREFIX}/pkg/birdvector.xml \
-		${STAGEDIR}${DATADIR}/info.xml
+		${STAGEDIR}${DATADIR}/info.xml \
+		${STAGEDIR}${PREFIX}/www/packages/birdvector/birdvector_about.php
 
 .include <bsd.port.mk>
