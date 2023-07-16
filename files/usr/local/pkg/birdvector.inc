@@ -57,10 +57,11 @@ prefixes:
   - 192.0.2.0/24
   - 2001:db8::/48
 EOL;
-
-	if (!file_exists($pathvector_config) && file_put_contents($pathvector_config, $pathvector_config_content) === FALSE) {
-		log_error("ERROR: Could not write {$pathvector_config}");
-		exit;
+	if (!file_exists($pathvector_config)) {
+		if (file_put_contents($pathvector_config, $pathvector_config_content) === FALSE) {
+			log_error("ERROR: Could not write {$pathvector_config}");
+			exit;
+		}
 	}
 
 	write_config("[birdvector] Package installed.");
