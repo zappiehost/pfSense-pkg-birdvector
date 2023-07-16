@@ -12,6 +12,7 @@ $tab_array = array();
 $tab_array[] = array(gettext("Status"), true, "/packages/birdvector/birdvector.php");
 $tab_array[] = array(gettext("Configuration"), false, "/packages/birdvector/birdvector_config.php");
 $tab_array[] = array(gettext("Interactive Shell"), false, "/packages/birdvector/birdvector_shell.php");
+$tab_array[] = array(gettext("About"), false, "/packages/birdvector/birdvector_about.php");
 display_top_tabs($tab_array);
 
 if (!is_array($config['installedpackages']['birdvector'])) {
@@ -32,7 +33,7 @@ if($_POST['save']) {
 }
 
 if ($config['installedpackages']['birdvector']['config'][0]['enable'] != 'yes' || !is_service_running("bird")) {
-    print_info_box(gettext("Bird Daemon doesnt seem to be running."), "warning", false);
+    print_info_box(gettext("Bird Daemon doesnt seem to be running, Please start before configuring Pathvector."), "warning", false);
 }
 
 $enable['mode'] = $config['installedpackages']['birdvector']['config'][0]['enable'];

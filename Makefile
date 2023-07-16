@@ -48,6 +48,8 @@ do-install:
 		${STAGEDIR}${PREFIX}/www/packages/birdvector
 	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/packages/birdvector/birdvector_config.php \
 		 ${STAGEDIR}${PREFIX}/www/packages/birdvector
+	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/packages/birdvector/birdvector_about.php \
+		 ${STAGEDIR}${PREFIX}/www/packages/birdvector
 	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/packages/birdvector/birdvector_shell.php \
 		 ${STAGEDIR}${PREFIX}/www/packages/birdvector
 	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/packages/birdvector/birdvector_shell_ajax.php \

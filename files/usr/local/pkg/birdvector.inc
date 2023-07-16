@@ -140,4 +140,28 @@ function get_bird_status() {
 	return $output;
 }
 
+function pathvector_version() {
+	$output = shell_exec("/usr/local/bin/pathvector version | grep -w 'Built\|Pathvector' 2>&1");
+	if (!$output) {
+		return "Cannot Connect to Pathvector!";
+	}
+	return $output;
+}
+
+function bgpq4_version() {
+	$output = shell_exec("/usr/local/bin/bgpq4 -v | grep -w 'version' 2>&1");
+	if (!$output) {
+		return "Cannot Connect to BGPQ4!";
+	}
+	return $output;
+}
+
+function bird_version() {
+	$output = shell_exec("/usr/local/sbin/birdc --version 2>&1");
+	if (!$output) {
+		return "Cannot Connect to BIRD!";
+	}
+	return $output;
+}
+
 ?>
