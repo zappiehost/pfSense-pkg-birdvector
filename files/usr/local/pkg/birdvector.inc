@@ -157,7 +157,7 @@ function bgpq4_version() {
 }
 
 function bird_version() {
-	$output = shell_exec("/usr/local/sbin/birdc version | grep -w 'BIRD' 2>&1");
+	$output = shell_exec("/usr/local/sbin/birdc --version 2>&1");
 	if (!$output) {
 		return "Cannot Connect to BIRD!";
 	}
