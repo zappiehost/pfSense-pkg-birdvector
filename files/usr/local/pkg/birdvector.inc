@@ -29,7 +29,7 @@ function birdvector_install() {
 	$_rcfile['start'] = <<<EOD
 
 	if [ ! -d "{$rundir}" ]; then
-		install -d -g {$group} {$rundir};
+		install -d -g birdvty {$rundir};
 	fi
 
         if [ ! -d "{$bird_config_dir}" ]; then
