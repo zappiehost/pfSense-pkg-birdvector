@@ -1,10 +1,10 @@
 # BirdVector
 An implimentation of Bird2, Pathvector and BGPQ4 on the pfSense Environment.
 
-### What is it?
+## What is it?
 This pfSense package allows you to fully control pathvector and bird2 via the WebUI on your pfSense installations.
 
-### Screenshots
+[![Example PathVector] (https://i3.ytimg.com/vi/SaNtz-RUniw/maxresdefault.jpg)] (https://youtu.be/SaNtz-RUniw "Example PathVector")
 
 ## Installtion
 You will need to install the dependacies. If you're running pfSense 2.6 (FreeBSD-12) make sure to replace the below URLs with `reeBSD:12:amd64`
@@ -19,5 +19,9 @@ Download and install the latest version of the the BirdVector Package
 ```
 echo "IGNORE_OSVERSION=yes" >> /usr/local/etc/pkg.conf
 
+# For pfSense 2.7
 pkg add https://github.com/zappiehost/pfSense-pkg-birdvector/releases/latest/download/pfSense-pkg-BirdVector.pkg
+
+# For pfSense 2.6
+pkg add https://github.com/zappiehost/pfSense-pkg-birdvector/releases/latest/download/pfSense-pkg-BirdVector-2.6.pkg
 ```
