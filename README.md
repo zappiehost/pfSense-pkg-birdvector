@@ -1,5 +1,5 @@
 # BirdVector
-An implimentation of Bird2, Pathvector and BGPQ4 on the pfSense Environment.
+An implimentation of Bird BGP Daemon, Pathvector and BGPQ4 on the pfSense Environment.
 
 ## What is it?
 This pfSense package allows you to fully control pathvector and bird2 via the WebUI on your pfSense installations.
