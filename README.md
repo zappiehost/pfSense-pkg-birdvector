@@ -10,8 +10,8 @@ You will need to install the dependacies. If you're running pfSense 2.6 (FreeBSD
 ```
 pkg install libssh
 pkg install pfSense-pkg-Cron
-pkg add https://pkg.freebsd.org/FreeBSD:14:amd64/latest/All/bgpq4-1.11.pkg
-pkg add https://pkg.freebsd.org/FreeBSD:14:amd64/latest/All/bird2-2.13.1.pkg
+pkg add https://pkg.freebsd.org/FreeBSD:14:amd64/latest/All/bgpq4-1.12.pkg
+pkg add https://pkg.freebsd.org/FreeBSD:14:amd64/latest/All/bird2-2.15.1.pkg
 ```
 
 Download and install the latest version of the the BirdVector Package
