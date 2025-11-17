@@ -18,7 +18,7 @@ Download and install the latest version of the the BirdVector Package
 ```
 echo "IGNORE_OSVERSION=yes" >> /usr/local/etc/pkg.conf
 
-pkg add https://github.com/zappiehost/pfSense-pkg-birdvector/releases/latest/download/pfSense-pkg-BirdVector.pkg
+pkg add https://github.com/zappiehost/pfSense-pkg-birdvector/releases/latest/download/pfSense-pkg-BirdVector-pfsense-2.8.pkg
 ```
 
 ## Uninstall
